@@ -4,14 +4,10 @@ namespace WebApp.Controllers
 {
     public class HomeController : Controller // Name of controller is Home
     {
-        public string Index() // Name of action method is Index
+        public IActionResult Index() // Name of action method is Index
         {
-            return "Hello world from action method";
+            return View("Index"); // Render the Index view
         }
 
-        public string Error()
-        {
-            return "I have an error here";
-        }
     }
 }
